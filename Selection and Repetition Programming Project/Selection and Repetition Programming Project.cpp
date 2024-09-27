@@ -1,20 +1,53 @@
-// Selection and Repetition Programming Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Selection and Repetition Programming Project.cpp : Program 1: Calculator
+// This program will take two integers and the math operators +-/* and calculates them 
 
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+		//Variables
+	int int1;		//First integer input
+	int int2;		//Second integer input
+	char operate;	//The operator to use
+	double answer;	//This is the output to the calculations
+		//Input
+	
+	cout << "Enter your first whole number" << endl;		//Geting the first input
+	
+	cin >> int1;
+
+	cout << "Enter your second whole number" << endl;		//Getting the second input
+
+	cin >> int2;
+
+	cout << "Enter the operator (+ - / *) you want to use" << endl;	//Getting the operator to use in the calculations
+
+	cin >> operate;
+
+		//Divide by Zero check
+
+	if (operate == '/' && int2 == 0)
+
+	{
+		cout << "You cannot divide by 0" << endl;
+	}
+	else 
+	{
+		//Calculations
+
+		answer = 
+
+
+	}
+	
+
+	
+
+	
+
+
+
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
