@@ -38,37 +38,50 @@ int main()
 	
 		//Calculations
 	
-	else if (operate == '/')
-	{	
-		answer =  static_cast <double> (int1) / int2;	//Division calculation, used static cast to change int1 to a floating point number to be able to divide into decimals without it being rounded to zero
-
-		cout << "Your answer is " << answer << endl;
-	}
-	else if (operate == '*')
-	{
-		answer = int1 * int2;							//Multiplication calculation
-
-		cout << "Your answer is " << answer << endl;
-	}
-	else if (operate == '+')
-	{
-		answer = int1 + int2;							//Addition Calculation
-		cout << "Your answer is " << answer << endl;
-	}
-	else if (operate == '-')
-	{
-		answer = int1 - int2;							//Subtraction Calculation
-		
-		cout << "Your ansswer is " << answer << endl;
-	}
-	
-		//Error for somehow getting past the incorrect operator loop
-
 	else
 	{
-		cout << "Erm something went wrong somehow" << endl;
-	}
+		switch (operate)
+		{
+		case '/':
+			
+			answer = static_cast <double> (int1) / int2;	//Division calculation, used static cast to change int1 to a floating point number to be able to divide into decimals without it being rounded to zero
+			
+			cout << "Your answer is " << answer << endl;
 
+			break;
+		
+		case '*':
+			
+			answer = int1 * int2;							//Multiplication calculation
+
+			cout << "Your answer is " << answer << endl;
+
+			break;
+		
+		case '+':
+			
+			answer = int1 + int2;							//Addition Calculation
+			
+			cout << "Your answer is " << answer << endl;
+		
+			break;
+
+		case '-':
+			
+			answer = int1 - int2;							//Subtraction Calculation
+
+			cout << "Your ansswer is " << answer << endl;
+
+			break;
+
+			//Error for somehow getting past the incorrect operator loop
+
+		default:
+			
+			cout << "Erm something went wrong somehow" << endl;
+		
+		}
+	}
 	return 0;
 
 }
