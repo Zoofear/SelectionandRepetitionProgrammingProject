@@ -130,8 +130,9 @@
     <ClCompile Include="Selection and Repetition Programming Project.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="C:\Users\miste\Downloads\file1.txt" />
-    <Text Include="C:\Users\miste\Downloads\file2.txt" />
+    <Text Include="file1.txt" />
+    <Text Include="file2.txt" />
+    <Text Include="file3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

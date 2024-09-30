@@ -1,7 +1,4 @@
 Adams C
-Barnes A
-Higgins B 
 Jones D
-Johnson C
 King B
 Kraft A 
