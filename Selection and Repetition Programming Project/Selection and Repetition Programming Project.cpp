@@ -39,7 +39,7 @@ int main()
 
 			//File reading loops
 
-		while (!file1.eof() && !file2.eof())
+		while (!file1.eof() && !file2.eof())	//Eof to check if the file is empty or not
 		{
 
 				//Getting the name in the file, Getline is ussed because file >> ends on a space and doesnt retrieve the name and grade together
@@ -73,7 +73,7 @@ int main()
 		
 			//This loop makes sure there are no remaning files in file 1, and if there are it will write it to file 3, It would only stay sorted if the file 1 and 2 were sorted
 
-		while (!file1.eof())
+		while (!file1.eof())	//Eof to check if the file is empty or not
 		{
 			getline(file1, name1);
 
@@ -84,7 +84,7 @@ int main()
 		
 			//This loop makes sure there are no remaning files in file 2, and if there are it will write it to file 3, It would only stay sorted if the file 1 and 2 were sorted
 		
-		while (!file2.eof())
+		while (!file2.eof())	//Eof to check if the file is empty or not
 		{
 			getline(file2, name2);
 
